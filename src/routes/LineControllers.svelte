@@ -10,23 +10,6 @@
     export let numberOfAngles: number;
     export let radius: number;
 
-    //const colorAlternatives = ["#DCDCDC", "#999999", "#454545",  "#17202a"];
-	//let selected: string[] = [...colors];
-
-    /*const toggleColor = (color: string) => {
-        const index = selected.indexOf(color);
-        if (index === -1 ) {
-            selected.push(color)
-        }
-        else if (index === 0) {
-            selected.shift()
-        }
-        else {
-            selected.splice(index, index);
-        }
-        selected=selected;
-    }*/
-
 	function settingsChange(
         numberOfAngles: number, 
         stretch: number, 
@@ -34,14 +17,12 @@
         radius: number
 	) {
 
-        console.log('line changed event');
 		dispatch('settingsChanged', {
 			settings: {numberOfAngles: numberOfAngles, stretch: stretch, stretchBeforeMid: stretchBeforeMid, radius}
 		});
 		return true;
 	}
 
-    //can I use just an object here?
 	$: clear = settingsChange(numberOfAngles, stretch, stretchBeforeMid, radius);
 </script>
 
@@ -63,7 +44,7 @@
     <Slider bind:value={stretchBeforeMid} />
 
 
-    <h3>Radius:</h3>
+    <h3>Koko:</h3>
     <Slider bind:value={radius} />
 </div>
 

@@ -89,12 +89,8 @@ const stretchAndDrawLine = (line: [coordinate, coordinate], stretch: number, str
  * @returns 
  */
 export function createSketch(canvasWidth: number, canvasHeight: number, numOfAngles: number, stretch: number, stretchFromMid: number, radius: number): Sketch {
-
-
-    console.log("create")
     
     const dots = createPolygonDots(numOfAngles, radius);
-    //console.log(dots)
 
     let sketch: Sketch = (p5) => {
 
@@ -103,7 +99,6 @@ export function createSketch(canvasWidth: number, canvasHeight: number, numOfAng
             p5.createCanvas(canvasWidth, canvasHeight);
             p5.rect(0, 0, canvasWidth, canvasHeight);
             p5.translate(canvasWidth/2,canvasHeight/2);
-            //p5.scale(2,2)
 
         };
 

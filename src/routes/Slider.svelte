@@ -21,4 +21,4 @@
 
 
   <RangeSlider pips step={0.1} min={scaleBottom} max={scaleTop} first=label last=label bind:values on:change={(e) => {onChange(e)}} on:stop={(e)=>{onStop(e)}}/>
-  <input type="number" bind:value={values[0]} />  
+  <input disabled type="number" bind:value={values[0]} />  

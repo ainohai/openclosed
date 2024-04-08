@@ -9,9 +9,6 @@
 
 	const NUM_OF_DRAWINGS = 1;
 
-	let backgroundColors = ['#f3f4f7', '#e0dbd1', '#ccd9cb', '#b0c4de', '#f2e6c8'];
-	let selectedBackgroundColors = [backgroundColors[0]];
-
 	let numOfAngles = 3;
 	let stretch = 1;
 	let stretchStartFromMid = 0.5;

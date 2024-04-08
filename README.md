@@ -1,5 +1,6 @@
 # Description
-Quick intro into Svelte and a digital version of an art lesson task. 
+For testing the effect of a single simple shape when it's modified.
+Live version: https://ainohai.github.io/openclosed/ 
 
 ## Developing
 
